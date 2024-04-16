@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Alogorythm_labs.lab_1
 {
-    internal class Program_4_4_1
+    internal class Program_7_4_1
     {
         class Edge
         {
@@ -56,21 +56,30 @@ namespace Alogorythm_labs.lab_1
         }
         public static void Main(string[] args)
         {
-            List<Edge> edges = new List<Edge>
+                List<Edge> edges = new List<Edge>
             {
-                new Edge(0, 1, 2),
-                new Edge(0, 2, 4),
+                new Edge(0, 1, 4),
                 new Edge(1, 2, 1),
-                new Edge(1, 3, 7),
-                new Edge(2, 3, 3),
+                new Edge(2, 3, 1),
+                new Edge(3, 7, 6),
+                new Edge(7, 6, 5),
+                new Edge(3, 6, 8),
+                new Edge(2, 7, 7),
+                new Edge(6, 5, 1),
+                new Edge(5, 4, 4),
+                new Edge(4, 0, 9),
+                new Edge(0, 5, 10),
+                new Edge(4, 2, 3),
+                new Edge(1, 6, 2),
+                new Edge(2, 5, 1),
             };
-            int numberOfVertices = 4;
-            List<Edge> minimumSpanningTree = KruskalMST(edges, numberOfVertices);
-            Console.WriteLine("Edges in the Minimum Spanning Tree:");
-            foreach (var edge in minimumSpanningTree)
-            {
-                Console.WriteLine($"{edge.Source} - {edge.Destination} (Weight: {edge.Weight})");
-            }
+                int numberOfVertices = 8;
+                List<Edge> minimumSpanningTree = KruskalMST(edges, numberOfVertices);
+                Console.WriteLine("Edges in the Minimum Spanning Tree:");
+                foreach (var edge in minimumSpanningTree)
+                {
+                    Console.WriteLine($"{edge.Source} - {edge.Destination} (Weight: {edge.Weight})");
+                }
             Console.ReadKey();
         }
     }

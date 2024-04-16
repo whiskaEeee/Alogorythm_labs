@@ -53,6 +53,8 @@
     <Compile Include="labs\lab_2\Program_4_3_1.cs" />
     <Compile Include="labs\lab_2\Program_4_4_1.cs" />
     <Compile Include="labs\lab_2\Program_5_4_1.cs" />
+    <Compile Include="labs\lab_2\Program_6_4_1.cs" />
+    <Compile Include="labs\lab_2\Program_7_4_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

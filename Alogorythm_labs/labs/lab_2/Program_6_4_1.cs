@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace Alogorythm_labs.lab_1
 {
-    internal class Program_5_4_1
+    internal class Program_6_4_1
     {
-        static int V = 4;
+        static int V = 8;
         static int minKey(int[] key, bool[] mstSet)
         {
 
@@ -68,10 +68,14 @@ namespace Alogorythm_labs.lab_1
 
         public static void Main(string[] args)
         {
-            int[,] graph = new int[,] { { 0, 2, 4, 0},
-                                      { 2, 0, 1, 7},
-                                      { 4, 1, 0, 3},
-                                      { 0, 7, 3, 0},
+            int[,] graph = new int[,] { { 0, 4, 0, 0, 9, 10, 0, 0 },
+                                      { 4, 0, 1, 0, 3, 0, 2, 0 },
+                                      { 0, 1, 0, 1, 0, 1, 0, 7 },
+                                      { 0, 0, 1, 0, 0, 0, 8, 6 },
+                                      { 9, 3, 0, 0, 0, 4, 0, 0 },
+                                      { 10, 0, 1, 0, 4, 0, 1, 0 },
+                                      { 0, 2, 0, 8, 0, 1, 0, 5 },
+                                      { 0, 0, 7, 6, 0, 0, 5, 0 },
             };
             primMST(graph);
             Console.ReadKey();
