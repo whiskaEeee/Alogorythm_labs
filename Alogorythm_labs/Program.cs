@@ -31,7 +31,7 @@ using System.Threading.Tasks;
  *          Часть 2    Лр 2    Задание 3        Traveling_selesman_1
  *          
  *      Лр 3:
- *          Часть 1    Лр 5    Задание 1        Program_3_1_1
+ *          Часть 1    Лр 5    Задание 1        Program_1_5_1
  *
  * 
  * 
@@ -42,7 +42,7 @@ namespace Alogorythm_labs
     {
         private static void Main(string[] args)
         {
-            Traveling_selesman_1.Main(args);
+            Program_1_5_1.Main(args);
         }
     }
 }

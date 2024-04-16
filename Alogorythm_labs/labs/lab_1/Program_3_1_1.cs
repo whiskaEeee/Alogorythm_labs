@@ -24,7 +24,7 @@ namespace Alogorythm_labs.lab_1
             Stopwatch stopwatch = new Stopwatch();
 
 
-            List<int> nums = new List<int> { 2500, 3500, 6500};
+            List<int> nums = new List<int> {2500, 3500, 6500};
             for (int i = 0; i < 3; i++)
             {
                 list = GenerateList(nums[i]);
