@@ -49,6 +49,10 @@
     <Compile Include="labs\lab_1\Program_3_1_1.cs" />
     <Compile Include="labs\lab_1\Program_6_2_1.cs" />
     <Compile Include="labs\lab_1\Program_8_1_1.cs" />
+    <Compile Include="labs\lab_2\Program_3_3_1.cs" />
+    <Compile Include="labs\lab_2\Program_4_3_1.cs" />
+    <Compile Include="labs\lab_2\Program_4_4_1.cs" />
+    <Compile Include="labs\lab_2\Program_5_4_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
