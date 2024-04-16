@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace Alogorythm_labs.lab_1
 {
-    internal class Program_3_1_1
+    internal class Program_8_1_1
     {
 
         public static void Main(string[] args)
@@ -16,7 +16,7 @@ namespace Alogorythm_labs.lab_1
             Console.WriteLine("\t\t[Test]\nBefore sorting");
             PrintList(list);
 
-            ShakerSortAlgorithm(list);
+            ShellSortAlgorithm(list);
 
             Console.WriteLine("After sorting");
             PrintList(list);
@@ -24,16 +24,16 @@ namespace Alogorythm_labs.lab_1
             Stopwatch stopwatch = new Stopwatch();
 
 
-            List<int> nums = new List<int> { 2500, 3500, 6500};
+            List<int> nums = new List<int> { 1600, 2800, 8800 };
             for (int i = 0; i < 3; i++)
             {
-                list = GenerateList(nums[i]);
+                list = GenerateList(nums[i] * 2);
 
-                
+
                 stopwatch.Start();
-                ShakerSortAlgorithm(list);
+                ShellSortAlgorithm(list);
                 stopwatch.Stop();
-                
+
                 TimeSpan elapsedTime = stopwatch.Elapsed;
                 Console.WriteLine($"Time passed for {nums[i]} elements: {elapsedTime.TotalMilliseconds} milliseconds.");
 
@@ -44,40 +44,25 @@ namespace Alogorythm_labs.lab_1
             Console.ReadKey();
         }
 
-        static void ShakerSortAlgorithm(List<int> list)
+        static void ShellSortAlgorithm(List<int> array)
         {
-            bool swapped;
-            do
+            int n = array.Count;
+            int gap = n / 2;
+            while (gap > 0)
             {
-                swapped = false;
-                for (int i = 0; i < list.Count - 1; i++)
+                for (int i = gap; i < n; i++)
                 {
-                    if (list[i] > list[i + 1])
+                    int temp = array[i];
+                    int j = i;
+                    while (j >= gap && array[j - gap] > temp)
                     {
-                        Swap(list, i, i + 1);
-                        swapped = true;
+                        array[j] = array[j - gap];
+                        j -= gap;
                     }
+                    array[j] = temp;
                 }
-                if (!swapped)
-                    break;
-
-                swapped = false;
-                for (int i = list.Count - 2; i >= 0; i--)
-                {
-                    if (list[i] > list[i + 1])
-                    {
-                        Swap(list, i, i + 1);
-                        swapped = true;
-                    }
-                }
-            } while (swapped);
-        }
-
-        static void Swap(List<int> list, int a, int b)
-        {
-            int temp = list[a];
-            list[a] = list[b];
-            list[b] = temp;
+                gap /= 2;
+            }
         }
 
         static void PrintList(List<int> list)
