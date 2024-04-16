@@ -55,11 +55,15 @@
     <Compile Include="labs\lab_2\Program_5_4_1.cs" />
     <Compile Include="labs\lab_2\Program_6_4_1.cs" />
     <Compile Include="labs\lab_2\Program_7_4_1.cs" />
+    <Compile Include="labs\lab_2\Traveling_selesman_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="links.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

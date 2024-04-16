@@ -28,6 +28,8 @@ using System.Threading.Tasks;
  *          Часть 1    Лр 4    Задание 4        Program_5_4_1 алгоритм Прима
  *          Часть 1    Лр 4    Задание 5        Program_6_4_1 алгоритм Прима
  *          Часть 1    Лр 4    Задание 6        Program_7_4_1 алгоритм Краскала
+ *          Часть 2    Лр 2    Задание 3        Traveling_selesman_1
+ *          
  *      Лр 3:
  *          Часть 1    Лр 5    Задание 1        Program_3_1_1
  *
@@ -40,7 +42,7 @@ namespace Alogorythm_labs
     {
         private static void Main(string[] args)
         {
-            Program_7_4_1.Main(args);
+            Traveling_selesman_1.Main(args);
         }
     }
 }
