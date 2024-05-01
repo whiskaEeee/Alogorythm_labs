@@ -42,7 +42,7 @@ namespace Alogorythm_labs
     {
         private static void Main(string[] args)
         {
-            Program_1_5_1.Main(args);
+            Program_3_1_1.Main(args);
         }
     }
 }
